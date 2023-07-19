@@ -7,6 +7,10 @@
 
 @section('content')
 
-<h1 class="text-xl text-red-900">ТС</h1>
-
+<section class="w-full">
+    <div class="w-11/12 max-w-7xl mx-auto">
+        <search-element></search-element>
+        <table-component></table-component>
+    <div>
+</section>
 @endsection

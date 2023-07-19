@@ -10,10 +10,9 @@
   font-display: block;
 }
 
-.pi {
+.pi:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'shop' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -194,7 +193,7 @@
   content: "\e937";
 }
 .shop_lins:before {
-  content: "\e938";
+  content: "\e938"!important;
 }
 .shop_lins_minus:before {
   content: "\e939";

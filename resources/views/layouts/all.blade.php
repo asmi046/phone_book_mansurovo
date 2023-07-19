@@ -37,7 +37,7 @@
 
 </head>
 <body class="site_body" id="global_app">
-
+    <x-diz-head></x-diz-head>
     @yield('content')
 
 </body>
