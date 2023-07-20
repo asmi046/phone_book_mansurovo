@@ -1,21 +1,29 @@
 <template>
-  <table class="w-full">
-    <thead>
+  <table class="w-full border-l border-sgreen border-t">
+    <thead class="hidden lg:table-header-group">
         <tr>
-            <name-cell tag="th">Имя</name-cell>
-            <th>Подразделение</th>
-            <th>Отдел</th>
-            <th>Телефон внутренний</th>
-            <th>Телефон мобильный</th>
+            <table-cell tag="th">Имя</table-cell>
+            <table-cell tag="th">Подразделение</table-cell>
+            <table-cell tag="th">Отдел</table-cell>
+            <table-cell tag="th">Телефон внутренний</table-cell>
+            <table-cell tag="th">Телефон мобильный</table-cell>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <name-cell tag="td">Иванов Иван Иванычь</name-cell>
-            <td>Конезавод</td>
-            <td>Бухгалтерия</td>
-            <td>03-00</td>
-            <td>+7 (903) 000-00-00</td>
+        <tr class="flex flex-col lg:table-row">
+            <table-cell tag="td" title="Имя">Иванов Иван Иванычь</table-cell>
+            <table-cell tag="td" title="Подразделение">Конезавод</table-cell>
+            <table-cell tag="td" title="Отдел">Бухгалтерия</table-cell>
+            <table-cell tag="td" title="Телефон внутренний">03-00</table-cell>
+            <table-cell tag="td" title="Телефон мобильный">+7 (903) 000-00-00</table-cell>
+        </tr>
+
+        <tr class="flex flex-col lg:table-row">
+            <table-cell tag="td" title="Имя">Иванов Иван Иванычь</table-cell>
+            <table-cell tag="td" title="Подразделение">Конезавод</table-cell>
+            <table-cell tag="td" title="Отдел">Бухгалтерия</table-cell>
+            <table-cell tag="td" title="Телефон внутренний">03-00</table-cell>
+            <table-cell tag="td" title="Телефон мобильный">+7 (903) 000-00-00</table-cell>
         </tr>
     </tbody>
 
@@ -23,9 +31,9 @@
 </template>
 
 <script>
-import nameCell from './table/nameCell.vue'
+import tableCell from './table/tableCell.vue'
 export default {
-    components: { nameCell },
+    components: { tableCell },
 
 }
 </script>
