@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('abonents', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string(100, 'name')->comment('Имя абонента');
-            $table->string(70, 'podrazdelenie')->comment('Подразделение');
-            $table->string(50, 'otdel')->comment('Отдел');
-            $table->string(100, 'dolgnost')->comment('Должность');
-            $table->string(15, 'phone_st')->comment('Телефон внутренний');
-            $table->string(20, 'phone_mobile')->comment('Телефон мобильный');
+            $table->string('name', 100)->comment('Имя абонента');
+            $table->string('podrazdelenie', 70)->comment('Подразделение');
+            $table->string('otdel', 50)->comment('Отдел')->nullable();
+            $table->string('dolgnost', 100)->comment('Должность');
+            $table->string('phone_st', 20)->comment('Телефон внутренний')->nullable();
+            $table->string('phone_mobile', 20)->comment('Телефон мобильный')->nullable();
         });
     }
 

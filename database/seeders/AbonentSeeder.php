@@ -43,6 +43,24 @@ class AbonentSeeder extends Seeder
                     'phone_mobile' => "+7 (000) 000-00-02",
                 ],
 
+                [
+                    'name' => "Карен Кареныч",
+                    'podrazdelenie'  => "Агрохолдинг",
+                    'otdel'  => "Автопарк",
+                    'dolgnost'  => "Механик",
+                    'phone_st'  => "03-16",
+                    'phone_mobile' => "+7 (000) 000-00-03",
+                ],
+
+                [
+                    'name' => "Евпат Игнатыч",
+                    'podrazdelenie'  => "Агрохолдинг",
+                    'otdel'  => "Автопарк",
+                    'dolgnost'  => "Механик",
+                    'phone_st'  => "03-16",
+                    'phone_mobile' => "+7 (000) 000-00-04",
+                ],
+
 
             ]);
     }
