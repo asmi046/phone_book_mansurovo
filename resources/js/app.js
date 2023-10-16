@@ -15,27 +15,42 @@ import VueAxios from 'vue-axios'
 const store = new createStore({
     state: {
       abonent_list: {},
+      search_str: ''
     },
 
     mutations: {
         setAbonentList (state, value) {
             state.abonent_list = value
         },
+
+        setSearchStr (state, value) {
+            state.search_str = value
+        },
+
+
     },
 
     getters: {
         abonentList: state => {
           return state.abonent_list
         },
+
+        setSearchStr: state => {
+          return state.search_str
+        },
     },
 
     actions: {
 
         initialBascet(context, value) {
-                axios.get('/get_abonent')
+                axios.get('/get_abonent', {
+                    params: {
+                      search: context.state.search_str
+                    }
+                  })
                 .then((response) => {
                     console.log(response.data)
-                    context.commit('setAbonentList', response.data)
+                    context.commit('setAbonentList', response.data.abonents)
                 })
                 .catch(error => console.log(error));
         },
