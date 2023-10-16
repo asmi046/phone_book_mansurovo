@@ -8,7 +8,7 @@
 @section('content')
 
 <section class="w-full">
-    <div class="w-11/12 max-w-7xl mx-auto">
+    <div class="w-11/12 max-w-full mx-auto">
         <search-element></search-element>
         <table-component></table-component>
     <div>

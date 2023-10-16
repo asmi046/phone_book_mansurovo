@@ -15,11 +15,14 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name', 100)->comment('Имя абонента');
-            $table->string('podrazdelenie', 70)->comment('Подразделение');
-            $table->string('otdel', 50)->comment('Отдел')->nullable();
-            $table->string('dolgnost', 100)->comment('Должность');
-            $table->string('phone_st', 20)->comment('Телефон внутренний')->nullable();
-            $table->string('phone_mobile', 20)->comment('Телефон мобильный')->nullable();
+            $table->string('tabel_number', 100)->comment('Табельный номер');
+            $table->string('dolgnost', 200)->comment('Должность');
+            $table->string('organization', 200)->comment('Организация');
+            $table->string('podrazdelenie', 200)->comment('Подразделение');
+            $table->string('podrazdelenie_rod', 200)->comment('Подразделение родительское');
+            $table->string('phone_st', 30)->comment('Телефон рабочий')->nullable();
+            $table->string('phone_mobile', 30)->comment('Телефон мобильный')->nullable();
+            $table->string('email', 100)->comment('Эдектронная почта')->nullable();
         });
     }
 
