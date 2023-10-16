@@ -29,7 +29,7 @@
         <meta name="_token" content="{{ csrf_token() }}">
 
         @vite([
-                'public/fonts/shop/style.css',
+                'public/scss/main.scss',
                 'resources/css/app.css',
                 'resources/js/app.js',
 
