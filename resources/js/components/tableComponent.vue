@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden lg:grid grid-cols-5 bg-sgreen text-white">
+    <div class="hidden lg:grid grid-cols-8 bg-sgreen text-white">
         <table-cell tag="th">Имя</table-cell>
         <table-cell tag="th">Табельный номер</table-cell>
         <table-cell tag="th">Должность</table-cell>
