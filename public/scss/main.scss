@@ -1,6 +1,25 @@
 @import "null";
 @import "fonts";
 
+$greencolor: #7eaf00;
+$graycolor: #f9f9fd;
+
 body {
-    font-family: Source+Sans;
+    font-family: 'Source Sans 3', sans-serif;
 }
+
+section {
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+._container {
+    width: 90%;
+    margin: auto;
+}
+
+
+@import "header";
+@import "searchform";
+@import "result-table";

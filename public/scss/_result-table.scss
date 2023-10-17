@@ -1,0 +1,19 @@
+.result_table_greed {
+    display: grid;
+    grid-template-columns: 15% 10% 15% 10% 15% 5% 10% 20%;
+
+    .th,.td {
+        padding: 7px 20px;
+    }
+
+    .th {
+        background-color: $greencolor;
+        color: white;
+        font-weight: 600;
+    }
+
+}
+
+.mobile_caption {
+    display: none;
+}

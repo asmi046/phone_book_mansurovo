@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden lg:grid grid-cols-8 bg-sgreen text-white">
+    <div class="result_table_greed">
         <table-cell tag="th">Имя</table-cell>
         <table-cell tag="th">Табельный номер</table-cell>
         <table-cell tag="th">Должность</table-cell>
@@ -11,7 +11,6 @@
     </div>
 
     <table-row v-for="item in abonents" :key="item.id">
-
         <table-cell tag="td" title="Имя">{{item.name}}</table-cell>
         <table-cell tag="td" title="Табельный номер">{{item.tabel_number}}</table-cell>
         <table-cell tag="td" title="Должность">{{item.dolgnost}}</table-cell>

@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 mb-4 lg:mb-0 lg:grid-cols-8 bg-green-50 odd:bg-green-100">
+    <div class="result_table_greed">
         <slot></slot>
     </div>
 </template>

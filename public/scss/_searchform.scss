@@ -1,0 +1,28 @@
+.search_form {
+    width:100%;
+    background-color: $graycolor;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    input{
+        border:none;
+        width:90%;
+        height: 35px;
+        padding:  0 10px;
+    }
+
+    button{
+        border: none;
+        width:35px;
+        height:35px;
+        background-color: white;
+        background-image: url(../img/lens.svg);
+        background-size: 60% 60%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
