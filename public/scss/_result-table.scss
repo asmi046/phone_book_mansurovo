@@ -1,9 +1,11 @@
 .result_table_greed {
     display: grid;
-    grid-template-columns: 15% 10% 15% 10% 15% 5% 10% 20%;
+    grid-template-columns: 15% 10% 15% 10% 15% 10% 10% 15%;
+    overflow: hidden;
 
     .th,.td {
         padding: 7px 20px;
+        word-wrap: break-word;
     }
 
     .th {
@@ -12,7 +14,30 @@
         font-weight: 600;
     }
 
+    &.top-round {
+        border-radius: 10px 10px 0 0 ;
+    }
+
 }
+
+.t_body {
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    .result_table_greed:nth-child(2n){
+        background-color: #e0e2dc;
+    }
+
+    .result_table_greed{
+        background-color: #eae6d2
+    }
+}
+
+
+
+
+
+
+
 
 .mobile_caption {
     display: none;

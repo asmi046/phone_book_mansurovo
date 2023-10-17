@@ -1,5 +1,5 @@
 <template>
-    <div class="result_table_greed">
+    <div class="result_table_greed top-round">
         <table-cell tag="th">Имя</table-cell>
         <table-cell tag="th">Табельный номер</table-cell>
         <table-cell tag="th">Должность</table-cell>
@@ -10,16 +10,18 @@
         <table-cell tag="th">Электронная почта</table-cell>
     </div>
 
-    <table-row v-for="item in abonents" :key="item.id">
-        <table-cell tag="td" title="Имя">{{item.name}}</table-cell>
-        <table-cell tag="td" title="Табельный номер">{{item.tabel_number}}</table-cell>
-        <table-cell tag="td" title="Должность">{{item.dolgnost}}</table-cell>
-        <table-cell tag="td" title="Организация">{{item.organization}}</table-cell>
-        <table-cell tag="td" title="Подразделение">{{item.podrazdelenie}}</table-cell>
-        <table-cell tag="td" title="Телефон внутренний">{{item.phone_st}}</table-cell>
-        <table-cell tag="td" title="Телефон мобильный">{{item.phone_mobile}}</table-cell>
-        <table-cell tag="td" title="Электронная почта">{{item.email}}</table-cell>
-    </table-row>
+    <div v-if="count(abonents) > 0" class ="t_body">
+        <table-row v-for="item in abonents" :key="item.id">
+            <table-cell tag="td" title="Имя">{{item.name}}</table-cell>
+            <table-cell tag="td" title="Табельный номер">{{item.tabel_number}}</table-cell>
+            <table-cell tag="td" title="Должность">{{item.dolgnost}}</table-cell>
+            <table-cell tag="td" title="Организация">{{item.organization}}</table-cell>
+            <table-cell tag="td" title="Подразделение">{{item.podrazdelenie}}</table-cell>
+            <table-cell tag="td" title="Телефон внутренний">{{item.phone_st}}</table-cell>
+            <table-cell tag="td" title="Телефон мобильный">{{item.phone_mobile}}</table-cell>
+            <table-cell tag="td" title="Электронная почта">{{item.email}}</table-cell>
+        </table-row>
+    </div>
 
 
 </template>
