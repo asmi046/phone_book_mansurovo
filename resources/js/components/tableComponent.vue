@@ -10,7 +10,7 @@
         <table-cell tag="th">Электронная почта</table-cell>
     </div>
 
-    <div v-if="count(abonents) > 0" class ="t_body">
+    <div v-if="abonents.length > 0" class ="t_body">
         <table-row v-for="item in abonents" :key="item.id">
             <table-cell tag="td" title="Имя">{{item.name}}</table-cell>
             <table-cell tag="td" title="Табельный номер">{{item.tabel_number}}</table-cell>
@@ -18,8 +18,14 @@
             <table-cell tag="td" title="Организация">{{item.organization}}</table-cell>
             <table-cell tag="td" title="Подразделение">{{item.podrazdelenie}}</table-cell>
             <table-cell tag="td" title="Телефон внутренний">{{item.phone_st}}</table-cell>
-            <table-cell tag="td" title="Телефон мобильный">{{item.phone_mobile}}</table-cell>
-            <table-cell tag="td" title="Электронная почта">{{item.email}}</table-cell>
+            <table-cell tag="td" title="Телефон мобильный"><a :href="'tel:'+item.phone_mobile">{{item.phone_mobile}}</a></table-cell>
+            <table-cell tag="td" title="Электронная почта"><a :href="'mailto:'+item.email">{{item.email}}</a></table-cell>
+        </table-row>
+    </div>
+    <div v-else class ="t_body">
+        <table-row>
+
+            <span class="search_faild">Ничего не найдено</span>
         </table-row>
     </div>
 

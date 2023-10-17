@@ -3,6 +3,15 @@
     grid-template-columns: 15% 10% 15% 10% 15% 10% 10% 15%;
     overflow: hidden;
 
+    a:hover{
+        text-decoration: underline;
+    }
+
+    a{
+        color: $greencolor;
+        text-decoration: none;
+    }
+
     .th,.td {
         padding: 7px 20px;
         word-wrap: break-word;
@@ -30,12 +39,13 @@
     .result_table_greed{
         background-color: #eae6d2
     }
+
+    .search_faild {
+        padding: 10px 0;
+        text-align: center;
+        grid-column: 1/9;
+    }
 }
-
-
-
-
-
 
 
 
