@@ -19,6 +19,35 @@ section {
     margin: auto;
 }
 
+.organization_list {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    label {
+        border:1px solid #7eaf00;
+        color: #7eaf00;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        &.selected,
+        input:checked ~ span{
+            background-color: #7eaf00;
+            color:white;
+        }
+
+        span{
+            padding: 5px 10px;
+            display: block;
+        }
+
+        input {
+            display: none
+        }
+    }
+}
 
 @import "header";
 @import "searchform";

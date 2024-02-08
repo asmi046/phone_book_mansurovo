@@ -1,7 +1,6 @@
 <template>
     <div class="result_table_greed top-round">
         <table-cell tag="th">Имя</table-cell>
-        <table-cell tag="th">Табельный номер</table-cell>
         <table-cell tag="th">Должность</table-cell>
         <table-cell tag="th">Организация</table-cell>
         <table-cell tag="th">Подразделение</table-cell>
@@ -13,7 +12,6 @@
     <div v-if="abonents.length > 0" class ="t_body">
         <table-row v-for="item in abonents" :key="item.id">
             <table-cell tag="td" title="Имя">{{item.name}}</table-cell>
-            <table-cell tag="td" title="Табельный номер">{{item.tabel_number}}</table-cell>
             <table-cell tag="td" title="Должность">{{item.dolgnost}}</table-cell>
             <table-cell tag="td" title="Организация">{{item.organization}}</table-cell>
             <table-cell tag="td" title="Подразделение">{{item.podrazdelenie}}</table-cell>
